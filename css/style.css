@@ -1,0 +1,205 @@
+/*
+NEW GENERAL STYLESHEET FOR RESPONSIVE TEMPLATES using Bootstrap v4.3.1
+*/
+
+
+/* NEW - STANDARD ELEMENTS
+===========================================================================================================*/
+body { 
+	font-family: var(--siteFont-main);
+	font-size: 1rem;
+	line-height: 1.65;
+	font-weight: 400;
+	color: var(--textColor); 
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+p {
+	margin-top: 0; 
+	margin-bottom: 1.25rem; 
+}
+
+a { color: var(--primaryColor); }
+a:hover, a:focus { color: var(--thirdColor); }
+
+.pageTitle, h1, h2, h3, h4, h5, h6 {
+	font-family: var(--siteFont-headings);
+	margin-bottom: .5rem;
+	line-height: 1.25;
+}
+.pageTitle, h1 { 
+	font-size: 1.85rem; 
+	color: var(--primaryColor); 
+	margin-bottom: 1.8rem; 
+	text-transform: uppercase;
+}
+h2 { font-size: 1.55rem; color: var(--secondaryColor); }
+h3 { font-size: 1.35rem; color: var(--thirdColor); }
+h4 { font-size: 1.25rem; color: var(--textColor); }
+
+
+/* ================= TABLE COLOR styles ===================*/
+.bgcolor1, .bdcolor1, .color1,
+.tb-color1 { /* header row & font color */
+	color: var(--primaryColor-text); background-color: var(--primaryColor); }
+
+.bgcolor2, .bdcolor2, .color2,
+.tb-color2 { /* 2nd row & font color */
+	color: var(--secondaryColor-text); background-color:#3D0089; }
+	
+.bgcolor3, .bdcolor3, .color3,
+.tb-color3 { /* 3nd row & font color */
+	color: var(--thirdColor-text); background-color: var(--thirdColor); }
+
+.tb-colorLt { /* light row & font color */
+	color: var(--textColor); background-color: #ebebeb; }
+	
+.bgcolorSpecial,
+.tb-colorDefault {  
+	color: var(--textColor); background-color: #CCC; }	
+	
+.tb-text { /*--- Default text for all tables that use "tb-text" DO NOT CHANGE ----*/
+	font-family: var(--siteFont-forms);
+	font-size: 0.9rem;
+	color: var(--textColor);
+	text-align: left;
+}	
+
+/*========== For table GRIDS / LINES  ===================*/
+/* Default grey COLOR for table lines - change only if needed*/
+.border-table th, .border-table td,
+.line-table th, .line-table td { border-color: #dddddd !important;}
+
+
+/*=================== For CSS FORM BUTTON COLOR - change default color if requested  ========================*/
+a.bttn-form-default, input.bttn-form-default, button.bttn-form-default { 
+	color: #FFF !important; background-color: #959595 !important; }
+a.bttn-form-default:hover, input.bttn-form-default:hover, button.bttn-form-default:hover { 
+	color: #FFF !important; background-color: #636363 !important; border: 1px solid transparent; }
+a.bttn-form-default:focus, input.bttn-form-default:focus, button.bttn-form-default:focus { 
+	border: 1px solid #000;}
+	
+	
+/*========== CSS Tabs  =================== */
+#eshowmenutab.menutab a.tab { color: var(--secondaryColor-text);} 
+#eshowmenutab.menutab a.tab::before { background-color: var(--secondaryColor);}
+#eshowmenutab.menutab a.selected { color: var(--primaryColor-text);}
+#eshowmenutab.menutab a.selected::before { background-color: var(--primaryColor);}
+#eshowmenutab.menutab a.tab:hover:before { background-color: var(--primaryColor);}
+
+
+/* MOBILE APP WEBSITE MENU (original have not changed - needed or delete?? - possibly update)
+===========================================================================================================*/
+#mobile-menu > span { color: var(--primaryColor); }
+#mobile-menu > span:hover {color: var(--secondaryColor); }
+#toggle-view-menu > li { background-color: var(--primaryColor); }
+#toggle-view-menu li:hover { background-color: var(--secondaryColor); }
+#toggle-view-menu span { background-color: var(--primaryColor); }
+#toggle-view-menu li.active { background-color: var(--primaryColor); }
+#toggle-view-menu .menu-panel {background-color: var(--primaryColor); }
+
+
+/* BACK TO TOP
+===========================================================================================================*/
+#back-top a { background-color: var(--primaryColor); }
+#back-top a:hover { background-color: var(--thirdColor); }
+
+
+/*========== Site CUSTOM BUTTONS ===================*/
+.custom-button {
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--thirdColor-text);
+	letter-spacing: 0.035rem;
+	text-decoration: none;
+	background-color: var(--thirdColor);
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	text-transform: uppercase;
+	/*border: solid #FFF 3px;*/
+}
+.custom-button:hover,
+.custom-button:focus {
+	color: var(--primaryColor-text);
+	text-decoration: none;
+	background-color: var(--primaryColor);
+	/*border: solid #FFF 3px;*/
+}
+
+/*========== CURRENT BUTTON ===================*/
+
+.bttn-blue {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	letter-spacing: 0.035em;
+	text-transform: uppercase;
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	background-color:#35AEE5;
+	padding: 10px 25px;
+	/*border: solid  #CB2026 3px;*/
+	text-decoration: none;
+}
+
+.bttn-blue:hover,
+.bttn-blue:focus {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #4B0082;
+}
+
+
+/*========== MISC ===================*/
+/*fix for Internet Explorer 10, SVG images with .img-fluid are disproportionately sized.*/
+.img-svg { width: 100% \9; }
+
+
+
+
+
+
+/* BASIC MEDIA QUERIES - Bootsrap 4
+===========================================================================================================*/
+
+/* Max container widths:
+** Extra large devices (large desktops, 1200px and up) - .col-xl = 1140px 
+** Large devices (desktops, 992px and up) - .col-lg- = 960px 
+** Medium devices (tablets, 768px and up) - .col-md- = 720px  
+** Small devices (landscape phones, 576px and up) - .col-sm- = 540px 
+** Extra small devices (portrait phones, less than 576px) .col-  = None (auto) 
+*/
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+	
+/******/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { }
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { }
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { }
+
+/*Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width*/
