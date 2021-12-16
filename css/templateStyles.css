@@ -1,0 +1,165 @@
+/*
+CUSTOM 0020 ========= HTML BUILD BETA v1.0 - Adriana  - UPDATED 09-09-2020 
+NEW STYLESHEET FOR RESPONSIVE -- CUSTOM WIDE using Bootstrap v4.3.1 --
+*/
+
+
+/* EXCLUSIVE STYLES FOR CUSTOM TEMPLATE - Wide Layout (styles based on my template 0010)
+===========================================================================================================*/
+body { 
+	/*background: var(--siteBkgImage);*/
+	background-color: var(--siteBkgColor);
+}
+
+
+
+/* HEADER SECTION
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* TOP NAV (use this nav section or the one below)
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+ 
+ /* OR ---- TOP NAV WITH BRAND LOGO 
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/ 
+ 
+ 
+ 
+/* HERO CAROUSEL / MAIN SLIDESHOW 
+===========================================================================================================*/
+#hero-section { background-color: transparent; padding: 0; }
+
+
+
+/* SUMMARY
+===========================================================================================================*/
+
+
+/* FEATURED BOXES
+===========================================================================================================*/
+
+
+
+/* PAGE CONTENT (SIDE COL and ADMIN) - GENERAL OVERALL SECTION
+===========================================================================================================*/
+#content-section { background-color: var(--siteBkgColor); padding: 1.5rem 0 1.5rem 0;}
+
+#content-section-index { 
+	background-color: #fff; 
+	padding: 2rem 0 2rem 0;
+	background-image:url(../images/sitelook/summary_back.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+ 	
+	#content-section-index  { 
+    background-position: right bottom;
+	}	
+
+}
+
+
+/* MAIN ADMIN CONTENT - GENERAL
+===========================================================================================================*/
+#admin-page-content { background-color: transparent; }
+.admincontent9, .admincontent12 { padding: 15px 15px; margin-bottom: 1.75rem;}
+
+
+/* SIDE COLUMN - GENERAL
+===========================================================================================================*/
+#side-column-content { background-color: transparent; }
+.sidecolumn3 { padding: 15px 0; }
+
+.side-col-items { 
+	background: transparent; 
+	margin: 0; 
+	padding: 0;
+}
+.side-col-headers {
+	background-color: #FFF;
+	padding: 0 0 0.25rem 0;
+	border-bottom: 3px solid #ffc557;
+	margin-bottom: 1rem;
+}
+.side-col-header-text {
+	font-size: 1.35rem;
+	color: var(--primaryColor);
+	font-weight: regular;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+
+/* SIDE COLUMN - SIDE NAV (only if side nav is called and used)
+===========================================================================================================*/
+.nav-side-area { padding-bottom: 3rem;}
+
+
+
+/* SIDE COLUMN - QUICK LINKS
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* SIDE COLUMN - CAROUSEL SPONSOR (one image at a time)
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* SIDE COLUMN - PURE CSS COUNTDOWN (NO IMAGE)
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* SIDE COLUMN - TWITTER
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* CUSTOM CONTENT - THREE COLUMNS 
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* CUSTOM CONTENT - ONE COLUMN
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* TESTIMONIALS CAROUSEL
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* SPONSOR WIDE CAROUSEL OWL
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* FOOTER 
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
+/* eSHOW FOOTER
+===========================================================================================================*/
+/*IMPORTANT - Move styles from include here*/
+
+
+
