@@ -1,0 +1,1114 @@
+
+/*  Bootstrap Responsive v2.3.2 
+ * 	span12 =  width: 1170px
+ * 	span9 = width: 870px
+ * 	span3 = width: 270px  */
+ 
+/* ================= COLOR & FONT - TABLE styles ===================*/
+/* All LOCAL SHOW table color styles are in style.css */
+
+/* ================= ALL OTHER COLORS: BUTTONS, FORMS, ETC. ===================*/
+
+/* ================= GLOBAL TABLE styles ===================*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/* FOR RESPONSIVE TABLES from bootstrap 3 styles */ 
+.table-responsive {
+	overflow-x: auto;
+	min-height: 0.01%;
+ }
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+		width: 100%;
+		margin-bottom: 15px;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		/*border: 1px solid #dddddd;*/
+	}
+  .table-responsive > .table { margin-bottom: 0; }
+}
+
+
+/* =========== DO NOT CHANGE - STRUCTURE ============ */
+.form-table {
+	max-width: 100%;
+	background-color: #FFF;
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+.form-table { 
+	width: 100%; 
+	margin-bottom: 0.2em; 
+}
+.form-table th, /*Header row for all tables that use "th"*/
+.form-table-header /*Header row for all tables that DON'T use "th"*/ { 
+	font-weight: bold;
+	letter-spacing: .05em;
+	text-transform: uppercase; /* 05/29/2019 - Ami commented for better readability */
+}
+.form-table th,
+.form-table td { 
+	padding: 0.65em;
+	line-height: 1.3em;
+	text-align: left;
+	/*vertical-align: top;*/
+	vertical-align: middle; 
+	}
+
+/*========== For table GRIDS / LINES  ===================*
+/*for Tables with grid/lines on BOTTOM ONLY*/
+.line-table th,
+.line-table td {
+	border-top: 0 none;
+	border-right: 0 none;
+	border-left: 0 none;
+}
+
+/* DO NOT CHANGE - last row table lines  */
+.line-table tr:last-child td { border-bottom: 0 none;}
+
+/*for Tables with NO grid/lines ONLY*/
+.noBorder-table th,
+.noBorder-table td { border: 0 none;} /* DO NOT CHANGE - NO table lines*/
+
+/*for form level1 and level2 tables*/
+.form-gen-border { border: none; /*border: 1px solid #dddddd;*/}
+/*========== END table GRIDS / LINES  ===================*/
+
+
+/*========== eShow GLOBAL FORMS AND TABLE STYLES  ===================*/
+tr.tb-bold, td.tb-bold, .tb-bold, .txt-bold, td.bold-text, .bold-text {font-weight: bold; letter-spacing: .04em;}/* to BOLD not in TH */
+
+td.tb-text-right, th.tb-text-right { text-align: right; }
+td.tb-text-center, th.tb-text-center, .tb-text-center { text-align: center; }
+
+
+td.tb-align-top { vertical-align: top !important; }
+td.tb-nowrap { white-space:nowrap; }
+
+td.tb-wide1 { width: 1%; }
+td.tb-wide5 { width: 5%; }
+td.tb-wide8 { width: 8%; }
+td.tb-wide10 { width: 10%; }
+td.tb-wide12 { width: 12%; }
+td.tb-wide15 { width: 15%; }
+td.tb-wide18 { width: 18%; }	
+td.tb-wide20 { width: 20%; }
+td.tb-wide25 { width: 25%; }
+td.tb-wide30 { width: 30%; }
+td.tb-wide33 { width: 33%; }
+td.tb-wide35 { width: 35%; }
+td.tb-wide40 { width: 40%; }
+td.tb-wide45 { width: 45%; }
+td.tb-wide50 { width: 50%; }
+td.tb-wide55 { width: 55%; }
+td.tb-wide60 { width: 60%; }
+td.tb-wide70 { width: 70%; }
+td.tb-wide75 { width: 75%; }
+td.tb-wide80 { width: 80%; }
+
+td.tb-description { text-align: left; }
+td.tb-qty {
+	text-align: center;
+	width: 5%;
+	white-space:nowrap;	
+}
+td.tb-network, td.tb-appt, td.tb-number {
+	text-align: center;
+	width: 8%;
+	white-space:nowrap;	
+}
+td.tb-currency, th.tb-currency {
+	text-align: right;
+	width: 12%;	
+	white-space:nowrap;
+}
+td.tb-room {
+	text-align: right;
+	width: 20%;
+}
+td.tb-time {
+	width: 25%;
+	white-space:nowrap;
+}
+td.tb-form-question, td.tb-form-question-left { 
+	font-weight: bold; 
+	/*color: inherit;*/
+	font-size: inherit;
+}
+td.tb-form-question { text-align: right; }
+td.tb-form-question-left { text-align: left; }
+td.tb-form-question-block, div.tb-form-question-block {
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 0;
+}
+
+td.td-side-bttn-text {padding-right: 8em;}
+
+@media screen and (max-width: 767px) {
+	td.td-side-bttn-text {padding-right: 1em;}
+}
+
+
+/* ================= GLOBAL - NEW FORM styles ===================*/
+
+/*bootstrap 2: input overrides and fallbacks*/
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], 
+input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	box-shadow: none;
+	transition: none;
+	/*padding: 0;*/
+	width: 85%;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+	border: 1px solid #CCC;
+	outline: 0px none;
+	box-shadow: none;
+	/*border-color: rgba(204, 204, 204, 0.8);
+	outline: 0px none;
+	box-shadow: 0px 1px 1px rgba(204, 204, 204, 0.075) inset, 0px 0px 5px rgba(204, 204, 204, 0.6);*/
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	display: inline-block;
+	height: 34.2px;
+	padding: 0.35em 0em 0.35em 0.55em;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #555;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+textarea {
+	height: auto;
+}
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+	width: auto;
+}
+/*END  bootstrap 2: input overrides and fallbacks*/
+
+
+button[disabled], html input[disabled], button:hover[disabled], html input:hover[disabled] {
+	background-color: #d7d7d7;
+	color: #898989 !important;
+	cursor: default;
+	opacity: 2; 
+ }
+select {
+	width: 85%;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+ }
+
+input.form-field-xsmall, .form-field-xsmall { width: 12%;}
+input.form-field-small, .form-field-small  { width: 25%;}
+input.form-field-med, .form-field-med { width: 50%;}
+input.form-field-large, .form-field-large { width: 75%;}
+input.form-field-xlarge, .form-field-xlarge { width: 97%;}
+
+select.form-field-xsmall { width: 13%;}
+select.form-field-small { width: 26%;}
+select.form-field-med { width: 51%;}
+select.form-field-large { width: 76%;}
+select.form-field-xlarge { width: 96%;}
+
+/*for payment table - month and year*/
+select.exp-dates {width: 25%; display: inline-block;}
+
+@media screen and (max-width: 767px) {
+	input.form-field-xsmall, .form-field-xsmall,
+	input.form-field-small, .form-field-small,
+	input.form-field-med, .form-field-med,
+	input.form-field-large, .form-field-large,
+	input.form-field-xlarge, .form-field-xlarge { width: 95%; }
+
+	select.form-field-xsmall,
+	select.form-field-small,
+	select.form-field-med,
+	select.form-field-large,
+	select.form-field-xlarge { width: 96%; }
+	
+	select.exp-dates { width: 47%;}
+}
+
+fieldset { padding: 0; margin: 0; border: 0;}
+
+label, legend, input, button, select, textarea {
+	font-size: 100%;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0;
+	vertical-align: middle;
+}
+label {
+	display: block;
+	margin-bottom: 4px;
+}
+legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	border: 0;
+	border-bottom: none;
+}
+input[type="radio"], input[type="checkbox"] {
+	margin: 3px 8px 0 0 !important;
+	line-height: normal;
+}
+
+/* NEW styles for checkboxes and radios */
+.form-radio-check {
+	position: relative;
+	display: block;
+	margin-bottom: 6px;
+	min-height: 20px;
+	padding-left: 10px;
+}
+.form-label-rc {
+	padding-left: 25px;
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 3px;
+}
+.form-input-rc {
+	position: absolute;
+}	
+.tb-form-inline .form-radio-check {
+	display: inline-block;
+	vertical-align: middle;}
+.tb-form-inline .form-option-other {
+	display: inline-block;
+	/*width: auto;*/ width: 40%;
+	vertical-align: middle;
+}
+
+/* to delete once all changes have been made */	
+.radio-checkbox input[type="radio"], .radio-checkbox input[type="checkbox"] { margin-left: -20px !important; float: left;}
+.radio-checkbox { min-height: 20px; padding-left: 20px;}
+.tb-form-inline .radio-checkbox input[type="radio"], .tb-form-inline .radio-checkbox input[type="checkbox"]{margin: 0 0 0 -20px !important;}
+.tb-form-inline .radio-checkbox { display: inline-block; vertical-align: middle;}
+/* to delete once all changes have been made */				
+		
+			
+.radio-no-select {
+	display: block;
+	margin: 0 auto;
+	height: 14px;
+	width: 14px;
+	background: #ddd;
+	border-radius: 50%;
+}
+.radio-checkbox-center input[type="radio"], .radio-checkbox-center input[type="checkbox"] {
+	float: none;
+}
+.radio-checkbox-center {
+	min-height: 20px;
+	padding-left: 7px;
+	/*padding-left: 5px;*/
+}
+.form-hidden {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+.input-other {
+	display: inline-block;
+	margin-top: 3px;
+}
+
+
+/* ================= MISC - NEW FORM styles =================== */
+tr.tb-cellReq, td.tb-cellReq, .tb-cellReq { font-weight: bold; }
+
+.question_required {
+	font-size: 11px;
+	margin: 0 0 0 3px;
+	padding: 3px 5px 4px 5px;
+	border-radius: 3px;
+	letter-spacing: 0.05em;
+}
+
+/* ======= for evaluation table*/
+a.tb-session-title { text-decoration: underline; }
+
+/* ======= for select button in a "look-alike" dropdown - ie: parking and apa */
+.pdown-input-group {
+	margin-bottom: 10px;
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+.pdown-input-group .form-field-group {
+	display: table-cell;
+}
+.pdown-input-group .form-field-group {
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+}
+/* (Field on LEFT side )*/
+.pdown-input-group .form-field-group:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+/* (Field on RIGHT side )*/
+.pdown-input-group .form-field-group:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.pdown-input-group-bttn {
+	position: relative;
+	font-size: 0;
+	white-space: nowrap;
+	width: 1%;
+	vertical-align: middle;
+	display: table-cell;
+}
+.pdown-input-group-bttn > .pdown-bttn {
+	position: relative;
+}
+.pdown-bttn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.445em;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #333;
+	background-color: #EEEEEE;
+}
+.pdown-bttn:hover, .pdown-bttn:focus {
+	background-color: #DCDCDC;
+	color: #000;
+	text-decoration: none;
+}
+/* (Button on LEFT side )*/
+.pdown-input-group-bttn:first-child > .pdown-bttn {
+	margin-right: -1px;
+}
+.pdown-input-group-bttn:first-child > .pdown-bttn {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+/* (Button on RIGHT side )*/
+.pdown-input-group-bttn:last-child > .pdown-bttn {
+	z-index: 2;
+	margin-left: -1px;
+}
+.pdown-input-group-bttn:last-child > .pdown-bttn {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-right: -8px;
+}
+
+/*========== For IMAGES &  RESPONSIVE IMAGES  ===================*/
+img.tb-image,
+img.tb-icon { vertical-align: text-top; }
+
+/*JUST for images in tables that need to adjust in size - NOT FOR ICONS*/
+img.tb-img-responsive {
+	display: block;
+	max-width: 100%;
+	/*width: 100%;*/
+	height: auto !important;
+	-ms-interpolation-mode: bicubic;
+}
+
+.speaker-img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto !important;
+	height: 250px;
+	-ms-interpolation-mode: bicubic;
+}
+.img-hotel-minheight {
+	min-height: 180px;
+}
+img.center-image { /*to center image*/
+	margin: 0 auto; 
+} 
+/*for general site images that should be responsive*/
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	/*width: 100%;*/
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+}
+
+
+/*=================== For CSS FORM BUTTONS  ========================*/
+
+/*== TEMPORARY to OVERRIDE forms.css ==*/
+input[type=submit], input[type=reset], input[type=button] { 
+	border-radius: 4px; 
+	text-shadow: none; 
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	filter: none; /* Internet Explorer */ 
+	padding: 6px 12px;
+	
+	border: solid 1px transparent; 
+	color: #FFF !important;
+	background: #959595;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none; 
+	
+	border: solid 1px transparent; 
+	color: #FFF !important;
+	background: #636363;
+}
+/*== END TEMPORARY to OVERRIDE forms.css ==*/	
+
+
+.tb-group-bttn { text-align: left;}
+.tb-group-bttn ul {
+	display: list-item;
+	list-style-type: none;
+	margin: 5px 0 !important;
+}
+.tb-group-bttn ul li {
+	padding: 0px;
+	display: inline-block;
+}
+
+.bttn-form {
+	margin: 5px 8px 5px 0;
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.43;
+	letter-spacing: 0.02em;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.bttn-form-right { float: right; }
+
+.bttn-form:focus, .bttn-form:hover { text-decoration: none;}
+
+button, input, select, textarea {font-family: inherit; font-size: inherit; line-height: inherit;}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer;}
+button, select {text-transform: none;}
+button {overflow: visible;}
+button, input, optgroup, select, textarea { margin: 0px; font: inherit; color: inherit;}
+
+/*========== Icon Buttons and Icons  ===================*/
+a:hover.bttn-icon-default, a:focus.bttn-icon-default {
+	text-decoration: none;
+}
+
+.bttn-icon .fa-stack {
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+}
+
+.inline-icon-labels ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.inline-icon-labels li {
+	float: left;
+}
+.inline-icon-labels li {
+	display: block;
+	padding: 8px 25px 8px 2px;
+}
+
+.dot-icon {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+	display: inline-block;
+ 	margin: 0.2em;
+  position: relative;
+}
+.dot-icon-number {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal; 
+	font-size: 12px; 
+	color:#FFF; 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*========== Other Buttons  ===================*/
+.tb-link-bttn {
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.43;
+	letter-spacing: 0.02em;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.sponsor-bttn { 
+	width: 12.5rem; 
+	min-height: 4rem; 
+	white-space: normal;
+}
+
+
+/*========== For Profile popup windows  =================== */
+.profile-contact-links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.profile-contact-links li {float: left;}
+.profile-contact-links li a {
+	display: block;
+	padding: 8px 15px 8px 2px;
+}
+
+
+/*========== For Abstract Review Step Table  =================== */
+.inline-icon-labels li {
+	display: block;
+	padding: 8px 12px 8px 2px;
+}
+.tb-legend {
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.20em;
+}
+
+
+/*========== For Speaker FAQs  =================== */
+#speaker_faqs td { vertical-align: top;}
+.faq-question::before { content: "Q: "; font-weight: bold;}
+.faq-answer::before { content: "A: "; font-weight: bold;}
+.faq-answer { padding-left: 2em;}
+
+
+
+/*==========  CUSTOM - 2 Side by side tables - using same structure as Bootstrap Responsive v2.3.2 =================== */
+[class*="eform-col"] {float: left; min-height: 1px; margin-left: 30px;}
+	
+.eform-row { width: 100%; *zoom: 1;}
+.eform-row:before, .eform-row:after { display: table; line-height: 0; content: "";}
+.eform-row:after { clear: both;}
+.eform-row [class*="eform-col"] {
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 30px;
+	margin-left: 2.564102564102564%;
+	*margin-left: 2.5109110747408616%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.eform-row [class*="eform-col"]:first-child { margin-left: 0;}
+	
+.eform-row .eform-col-1 { width: 100%; *width: 99.94680851063829%;}
+.eform-row .eform-col-2 { width: 48.717948717948715%; *width: 48.664757228587014%;}
+	
+.tb-container50 { margin-bottom:1.5em;}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	[class*="eform-col"] { float: left; min-height: 1px; margin-left: 20px;}
+	.eform-row { width: 100%; *zoom: 1;}
+	.eform-row:before, .eform-row:after { display: table; line-height: 0; content: "";}
+	.eform-row [class*="eform-col"] {
+		display: block;
+		float: left;
+		width: 100%;
+		min-height: 30px;
+		margin-left: 2.7624309392265194%;
+		*margin-left: 2.709239449864817%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.eform-row [class*="eform-col"]:first-child { margin-left: 0;}
+	.eform-row .eform-col-1 { width: 100%; *width: 99.94680851063829%;}
+	.eform-row .eform-col-2 { width: 48.61878453038674%; *width: 48.56559304102504%;}
+}
+@media (max-width: 767px) {
+	.eform-row { width: 100%;}
+	[class*="eform-col"],
+	.eform-row [class*="eform-col"] {
+		display: block;
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.eform-row .eform-col-1 {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+
+/*========== For Service Centers - NEW Login Box  =================== */
+#sc-form-signin.sc-flex-container { /* flex CONTAINER */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /*aligns at the top of the container*/
+}
+.sc-flex-item { /* flex ITEM */
+}
+.sc-flex-text {
+	flex: 1;
+}
+.sc-flex-login {
+	padding-bottom: 30px;
+}
+.flex-login-right { 
+	order: 2;
+	-webkit-order: 2;
+	padding-left: 30px;
+}
+.flex-login-left { 
+	order: 0;
+	-webkit-order: 0;
+	padding-right: 30px;
+}
+@media screen and (max-width: 1200px) {
+	.flex-login-right { padding-left: 20px;}
+	.flex-login-left { padding-right: 20px;}
+}
+@media (max-width: 979px) {
+	#sc-form-signin.sc-flex-container { flex-direction: column;}
+	.sc-flex-login { padding: 20px 0;}
+	.flex-login-right { padding-left: 0;}
+	.flex-login-left { padding-right: 0; order: 2;}
+}
+
+.sc-login-box {
+	width: 320px;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 8px;
+	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.15);
+	box-shadow: 0 3px 9px rgba(0,0,0,.15);
+}
+.sc-login-content {
+	text-align: center;
+}
+.sc-login-header {
+	border-radius: 6px 6px 0 0;
+}
+.sc-login-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 15px 0;
+}
+.sc-login-body {
+	font-size: 15px;
+	line-height: 1.35em;
+	padding: 15px;
+}
+@media screen and (max-width: 1200px) {
+	.sc-login-box { width: 250px;}
+}
+@media (max-width: 979px) {	/* Portrait tablet to landscape */
+	.sc-login-box { width: 320px;}
+}
+
+#sc-form-signin input.form-field-xlarge, #sc-form-signin .form-field-xlarge {
+	width: 100%;
+}
+input.bttn-form-long {
+	width: 100%;
+	margin: 15px 0;
+}
+
+
+/*========== MISC  ===================*/
+.printer-friendly { text-align: right; }
+
+
+/* Temp - until Hans fixes the corp. website. Then delete as it is already in eshow color */
+#cookieBar {
+	background-color: #333; 
+	color: #fff;
+}
+#clickAgreeCookie{
+	background-color: #959595;
+	color: #fff;
+}
+#cookieBar p { 
+	color: #EBEBEB; 
+}
+
+/* ===================classes for cookie consent===================*/
+#cookieBar {
+	min-width: 100%; 
+	text-align: center; 
+	border-radius: 2px; 
+	position: fixed; 
+	z-index: 99999; 
+	left: 0px; 
+	bottom: 0px;
+	padding: .5rem 3rem;
+}
+#clickAgreeCookie{
+	display: inline-block;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
+#cookieBar p { padding-bottom: 0.5rem; }
+#cookieBar.hide {visibility: hidden; }
+
+
+/* =================== classes for Ingo Social Media login integration 
+that is available by setup on the form engine. Currently used by all of NBAA events but open to any client. ===================*/
+.ingo_login_widget_field_text { padding-left: 22px !important; }
+
+
+/*========== For Exhibitor - Sponsorship - NEW Accordion/Collapse Layout  =================== */
+#sponsorTable p, #sponsorTable tb-text, #sponsorTable ul li {
+	font-size: inherit;
+}
+.accordion.sponsorship-accordion {
+	margin-bottom: 0;
+}
+.sponsorship-accordion .accordion-group {
+  padding: 6px 12px 8px 12px;
+  margin-bottom: 2px;
+  line-height: 1.5em;
+	border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.sponsorship-accordion .accordion-group:last-child {
+  border-bottom: none;
+}
+.sponsorship-accordion .accordion-heading .accordion-toggle {
+	display: block;
+  padding: 0;
+}
+.sponsorship-accordion .accordion-inner {
+	margin-top: 8px;
+	border-top: 1px solid #e5e5e5;
+}
+.sponsorship-accordion .sponsorshipPrice {
+	font-weight: bold;
+	color: inherit;
+}
+
+
+/*========== For Sponsor List Templates - Graphical and List Layout  =================== */
+.sponsors-graphical h4 {
+	border-bottom: 2px solid #ddd; 
+	padding-bottom: 8px;
+	margin-top: 2.5rem; 
+	margin-bottom: 0.3rem; 
+}
+.sponsor-graphical-img {
+	margin: 1rem;
+	width: 140px;
+	height: auto;
+}
+
+
+/*========== Form Steps Indicator  =================== */
+/*Temporary for form step progress - testing to verify wide use
+2020 ASHE Annual Booth Staff Registration, etc. */
+#es-form-steps-display ul.multi-steps {
+	padding: 0; 
+	margin: 0;
+}
+#es-form-steps-display.multi-steps > li.is-active:before, 
+#es-form-steps-display.multi-steps > li.is-active ~ li:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: normal;
+}
+#es-form-steps-display.multi-steps > li.is-active:after, 
+#es-form-steps-display.multi-steps > li.is-active ~ li:after {
+  background-color: #ededed;
+}
+#es-form-steps-display.multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+#es-form-steps-display.multi-steps > li {
+	font-size: 12px;
+  line-height: 1.25em;
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: #63666a;
+  z-index: 1;
+}
+#es-form-steps-display.multi-steps span.step-text {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+#es-form-steps-display.multi-steps > li:before {
+  content: '\f00c';
+  content: '\2713;';
+  content: '\10003';
+  content: '\10004';
+  content: '\2713';
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 34px;
+  height: 34px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #63666a;
+  border-radius: 50%;
+  /*z-index: 99;*/
+}
+#es-form-steps-display.multi-steps > li:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #63666a;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: -1;
+}
+#es-form-steps-display.multi-steps > li:last-child:after {
+  display: none;
+}
+#es-form-steps-display.multi-steps > li.is-active:before {
+  background-color: #63666a;
+  border-color: #63666a;
+  color: #fff;
+}
+#es-form-steps-display.multi-steps > li.is-active ~ li {
+  color: #808080;
+}
+#es-form-steps-display.multi-steps > li.is-active ~ li:before {
+  background-color: #ededed;
+  border-color: #ededed;
+}
+@media (max-width: 979px) { /* Landscape phones and down */
+	#es-form-steps-display.multi-steps span.step-text {display: none;}
+}
+
+
+/*========== Poster Gallery Cards  =================== */
+.es-cards .card-deck {
+	margin: 0 -15px;
+  justify-content: space-evenly; /*DO NOT CHANGE*/
+}
+.es-cards .card-deck .card {
+  margin: 0 0 1rem 0;
+}
+.es-card-img-top {
+	width:100%;
+	border-top-left-radius:calc(.25rem - 1px);
+	border-top-right-radius:calc(.25rem - 1px);
+}
+
+@media (max-width: 575.98px) { 
+	.es-cards .card-deck {margin: 0 15px;}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .es-cards .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .es-cards .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+@media (min-width: 992px) {
+  .es-cards .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
+}
+
+.es-cards .card-title {
+	font-size: 16px;
+	margin-bottom: 0;
+	color: inherit;
+}
+.es-cards .card-footer {
+	padding: .5rem 1.25rem;
+	background-color: rgba(0,0,0, .0);
+	border-top: 0 solid rgba(0,0,0,.125);
+}
+
+
+/*========== GAME PRIZES Poster Gallery Cards  =================== */
+/* First implemented in  2021 VAAEYC Conference  */
+#es-game-cards.es-cards.card-columns .card img {
+  margin: 0 auto;
+	display: block;
+	height: 130px !important;
+	width: auto !important;
+}
+
+
+/*========== SPEAKER Poster Gallery Cards  =================== */
+/* First implemented with AUSA annual 2020 - Ami revised structure 10/07/20 */
+#es-speaker-cards {
+	text-align: center;
+}
+#es-speaker-cards h2.deck-header {
+	padding: 3.5rem 0 1rem 0; /*DO NOT CHANGE*/
+}
+#es-speaker-cards h2.deck-header:first-child {
+	padding: 0.75rem 0 1rem 0; /*DO NOT CHANGE*/
+}
+#es-speaker-cards .card-deck {
+	padding: .5rem 0; /*DO NOT CHANGE*/
+}
+#es-speaker-cards .card-body {
+	padding: .75rem 1.25rem .25rem 1.25rem; /*DO NOT CHANGE*/
+}
+#es-speaker-cards p {
+	margin-bottom: 0.5rem; /*DO NOT CHANGE*/
+}
+
+#es-speaker-cards .spk-card-name {
+	font-size: 16px;
+}
+#es-speaker-cards .spk-card-name a {
+	color: inherit;
+  text-decoration: none;
+}
+#es-speaker-cards .spk-card-job-title {
+	font-size: 14px; 
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#es-speaker-cards .spk-card-company {
+	font-size: 14px;
+}
+
+#es-speaker-cards .card-bio-session {
+	display: inline-block; /*DO NOT CHANGE*/
+	font-size: 14px; /*DO NOT CHANGE*/
+}
+#es-speaker-cards .spk-card-bio {
+  padding-right: 10px; /*DO NOT CHANGE*/
+}
+#es-speaker-cards .card-bio-session a {
+	color: inherit;
+  text-decoration: none;
+}
+
+
+
+
+/* glbaol CSS override for dhtmltooltip so it can work with the new template */
+#dhtmlpointer, #dhtmltooltip {
+       position: absolute;
+       z-index: 9999;
+}
+
+
+
+/* changed the stack for tabs , commented the old media wit 768 and replaced with new media with 460
+@media (max-width: 768px) {
+	#eshowmenutab.menutab a.tab {
+		display:block;
+		margin: 0;
+	} 
+	#eshowmenutab.menutab a.tab::before {
+		border-radius: 5px 5px 0 0;
+		transform: perspective(2px) rotateX(0deg);
+	}
+}
+*/
+@media (max-width: 460px) {
+	#eshowmenutab.menutab a.tab {
+		display:block;
+		margin: 0;
+	} 
+	#eshowmenutab.menutab a.tab::before {
+		border-radius: 5px 5px 0 0;
+		transform: perspective(2px) rotateX(0deg);
+	}
+}
+/*end hans 08/04/2020 */
+
