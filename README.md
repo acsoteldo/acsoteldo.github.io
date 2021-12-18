@@ -1,6 +1,6 @@
 work in progress
 * add new landing page
-  ** aspiring creative developer | storyteller | analytics driven
+  * aspiring creative developer | storyteller | analytics driven
 * add contact page
 * add projects
 * edit style
