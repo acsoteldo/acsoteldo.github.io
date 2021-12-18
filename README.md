@@ -1,4 +1,6 @@
 work in progress
+* add new landing page
+* add contact page
 * add projects
 * edit style
 
