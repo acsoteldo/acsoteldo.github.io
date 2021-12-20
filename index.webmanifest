@@ -2,8 +2,8 @@
   "name": "Andrea Soteldo",
   "short_name": "Andrea Soteldo",
   "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "theme_color": "#ffc107",
+  "background_color": "#ffc107",
   "icons": [{
     "src": "/media/logo/icon1.png",
     "sizes": "500x500",
