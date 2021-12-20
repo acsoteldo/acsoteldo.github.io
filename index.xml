@@ -12,11 +12,19 @@
     </image>
     
     <item>
-      <title>Project Name</title>
+      <title>This Site</title>
+      <link>https://acsoteldo.github.io/</link>
+      <pubDate>Thu, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://acsoteldo.github.io/</guid>
+      <description>Just a simple site for some virtual presence.</description>
+    </item>
+    
+     <item>
+      <title>Coming soon...</title>
       <link>https://acsoteldo.github.io/projects/no_projects/</link>
       <pubDate>Thu, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://acsoteldo.github.io/projects/no_projects/</guid>
-      <description>Project Description</description>
+      <description>Work in progress.</description>
     </item>
     
   </channel>
