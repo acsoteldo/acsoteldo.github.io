@@ -1,54 +1,32 @@
-/* Set the global variables for everything. Change these to use your own fonts and colours. */
 :root {
-    /* Set sans-serif & mono fonts */
-    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
-    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
-    --base-fontsize: 1.15rem;
-    /* Major third scale progression - see https://type-scale.com/ */
-    --header-scale: 1.25;
-    /* Line height is set to the "Golden ratio" for optimal legibility */
-    --line-height: 1.618;
-    /* Default (light) theme */
-    --bg: #FFF;
-    --accent-bg: #F5F7FF;
-    --text: #212121;
-    --text-light: #585858;
-    --border: #D8DAE1;
-    --accent: #0D47A1;
-    --accent-light: #90CAF9;
-    --code: #D81B60;
-    --preformatted: #444;
-    --marked: #FFDD33;
-    --disabled: #EFEFEF;
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #212121;
-        --accent-bg: #2B2B2B;
-        --text: #DCDCDC;
-        --text-light: #ABABAB;
-        --border: #666;
-        --accent: #FFB300;
-        --accent-light: #FFECB3;
-        --code: #F06292;
-        --preformatted: #CCC;
-        --disabled: #111;
-    }
-
-    img, video {
-        opacity: .6;
-    }
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #2962ff;
+    --secondary: #6c757d;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
 html {
-    /* Set the font globally */
     font-family: var(--sans-font);
 }
 
-/* Make the body a nice central block */
 body {
     color: var(--text);
     background: var(--bg);
