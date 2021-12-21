@@ -314,36 +314,21 @@ input[type="radio"]:checked::after {
     font-size: 32px;
 }
 
-/* Make the textarea wider than other inputs */
-textarea {
-    width: 80%
-}
-
-/* Makes input fields wider on smaller screens */
-@media only screen and (max-width: 720px) {
-    textarea, select, input {
-        width: 100%;
-    }
-}
-
 /* Ensures the checkbox and radio inputs do not have a set width like other input fields */
 input[type="checkbox"], input[type="radio"] {
     width: auto;
 }
 
-/* do not show border around file selector button */
 input[type="file"] {
     border: 0;
 }
 
-/* Without this any HTML using <fieldset> shows ugly borders and has additional padding/margin. (Issue #3) */
 fieldset {
     border: 0;
     padding: 0;
     margin: 0;
 }
 
-/* Misc body elements */
 hr {
     color: var(--border);
     border-top: 1px;
@@ -381,13 +366,6 @@ blockquote {
     font-style: italic;
 }
 
-cite {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    font-style: normal;
-}
-
-/* Use mono font for code like elements */
 code, pre, pre span, kbd, samp {
     font-size: 1.075rem;
     font-family: var(--mono-font);
