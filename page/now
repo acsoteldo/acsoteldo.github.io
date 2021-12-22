@@ -66,11 +66,9 @@
         <section id="now" class="now-section wg-now   "  >
         <div class="container">
         <div class="row">
-        <h1 class="content-title">Where am I now?</h1>
+        <h1 class="content-title">NOW</h1>
           <p>Last updated on December 22nd, 2021.</p>
-          <h2>UCLA</h2><p>I'm currently <a href="/trips">living in Los Angeles</a> and attending UCLA. I'm focusing on classes for now, and I hope to explore more of Southern California over these next few weeks and months.</p>
-          <h2>Crypto</h2><p>I've become very excited about crypto and DeFi over these last few months, and as part of my work in the space I recently contributed an article to <a href="https://ethereum.org/">ethereum.org</a> about <a href="https://ethereum.org/en/developers/docs/mev/">miner extractable value</a>. While I plan to focus on school for the time being, I hope to continue reading and staying on top of new developments in the space.</p>
-          <h2>Accredited Investor</h2><p>My <a href="https://adviserinfo.sec.gov/individual/summary/7375692">investment adviser registration</a> was finally approved by the SEC, so I am now a bona fide <a href="https://www.sec.gov/corpfin/amendments-accredited-investor-definition-secg">accredited investor</a>. I am hoping to begin investing in startups soon.</p><div class="sc-bdnxRM bJDyiw">
+          <h2>What am I reading</h2><p>I'm currently reading<a href="//">l.</p>
           <small>Inspired by <a href="https://sive.rs/">Derek Sivers</a>'s <a href="https://nownownow.com/about">"now page"</a> site.</small></div></div>
         </div>
     </div>
