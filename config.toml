@@ -1,0 +1,51 @@
+baseurl = "https://acsoteldo.github.io/"
+languageCode = "en-us"
+title = "ACSOTELDO"
+theme = "hugo-tania"
+paginate = 6
+
+disqusShortname = "https://acsoteldo.github.io/"
+
+[params]
+  titleLogo = "/media/favicon.png"
+  enableFootnotes = true
+  enableEmoji = true
+
+  siteName = "Andrea Soteldo"
+  siteDesc = "acsoteldo.com"
+  author = "Andrea Soteldo"
+
+  maxCategoryToShow = 10
+
+  [params.socialOptions]
+    dev-to = ""
+    email = "acsoteldo01@gmail.com"
+    github = "https://github.com/acsoteldo"
+    linkedin = "https://www.linkedin.com/in/acsoteldo/"
+
+[menu]
+[[menu.header]]
+  name = "NOW"
+  url = "/now/a_now"
+
+[[menu.header]]
+  name = "PROJECTS"
+  url = "/projects"
+
+[[menu.header]]
+  name = "RESUME"
+  url = "/media/resume_acsoteldo.pdf"
+
+[[menu.footer]]
+    name = "'Draw wisdom from many different places' — Uncle Iroh"
+    url = ""
+
+[markup]
+[markup.highlight]
+  noClasses = false
+  lineNos = true
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
