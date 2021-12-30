@@ -1,4 +1,4 @@
-# work in progress
+## work in progress
 
 * add links in landing page
 * add projects
