@@ -7,6 +7,6 @@ Part of that effort will be to keep improving this website over the coming weeks
 
 ## work in progress:
 
-- [ ] add links in landing page
+- [x] add links in landing page
 - [ ] add projects
 - [ ] add more thoughts
