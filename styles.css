@@ -523,10 +523,6 @@ nav button.focused {
         text-align: center;
         padding: 1px 0;
     }
-
-    .welcome-message p {
-        margin-bottom: 5px;
-    }
     
     .dpad-up, .dpad-right, .dpad-down, .dpad-left, .dpad-center { 
         width: 50px;
