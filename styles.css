@@ -226,10 +226,6 @@ nav button.focused {
     text-align: center; 
     padding: 10px 0;
 }
-    
-.welcome-message p {
-    margin-bottom: 10px;
-}
 
 .back-button {
     background-color: var(--gb-dark-green);
@@ -592,7 +588,7 @@ nav button.focused {
     #content-area {
         padding: 10px 20px; 
         font-size: 0.65rem; 
-        line-height: 1.5; 
+        line-height: 1.75; 
         max-height: 280px; 
         overflow-y: auto;
         scrollbar-width: thin;
