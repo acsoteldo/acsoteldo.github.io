@@ -591,8 +591,8 @@ nav button.focused {
     /* Additional styles for content pages */
     #content-area {
         padding: 10px 20px; 
-        font-size: 0.85rem; 
-        line-height: 1.5; 
+        font-size: 0.65rem; 
+        line-height: 1; 
         max-height: 280px; 
         overflow-y: auto;
         scrollbar-width: thin;
