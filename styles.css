@@ -523,6 +523,10 @@ nav button.focused {
         text-align: center;
         padding: 1px 0;
     }
+
+    .welcome-message p {
+        margin-bottom: 5px;
+    }
     
     .dpad-up, .dpad-right, .dpad-down, .dpad-left, .dpad-center { 
         width: 50px;
@@ -592,7 +596,7 @@ nav button.focused {
     #content-area {
         padding: 10px 20px; 
         font-size: 0.65rem; 
-        line-height: 1; 
+        line-height: 1.5; 
         max-height: 280px; 
         overflow-y: auto;
         scrollbar-width: thin;
