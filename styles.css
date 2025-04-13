@@ -62,24 +62,12 @@ mark {
     width: 25%;
     order: 1;
     padding: 20px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px; 
-    padding: 20px; */
 }
 
 .center-column {
     box-sizing: border-box;
     width: 50%;
     order: 2;
-    /* flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px; */
 }
 
 .right-column { 
@@ -90,12 +78,6 @@ mark {
     width: 25%;
     order: 3;
     padding: 20px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px; 
-    padding: 20px; */
 }
 
 /* Screen Container */
@@ -466,10 +448,6 @@ nav button.focused {
         width: 60%;
         order: 2;
         padding: 20px 0;
-        /* width: 50%;
-        flex-direction: column; 
-        justify-content: left;
-        padding: 10px 0; */
     }
     
     .right-column { 
@@ -477,10 +455,6 @@ nav button.focused {
         width: 40%;
         order: 3;
         padding: 20px 0;
-        /* width: 50%;
-        flex-direction: column; 
-        justify-content: right;
-        padding: 10px 0; */
     }
 
     .center-column { 
@@ -488,9 +462,6 @@ nav button.focused {
         width: 100%;
         order: 1;
         margin-bottom: 20px
-        /* order: -1; 
-        margin-bottom: 20px;
-        width: 100%; */
     }
     
     .screen-container {
@@ -521,31 +492,31 @@ nav button.focused {
     }
     
     .dpad-up, .dpad-right, .dpad-down, .dpad-left, .dpad-center { 
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
     
     .dpad-up {
-        left: 50px;
+        left: 45px;
     }
     
     .dpad-right {
-        left: 95px; 
-        top: 50px;
+        left: 90px; 
+        top: 45px;
     }
     
     .dpad-down {
-        left: 50px; 
-        top: 95px;
+        left: 45px; 
+        top: 90px;
     }
     
     .dpad-left {
-        top: 50px;
+        top: 45px;
     }
     
     .dpad-center {
-        left: 50px; 
-        top: 50px;
+        left: 45px; 
+        top: 45px;
     }
 
     .ab-buttons {
