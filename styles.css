@@ -209,6 +209,10 @@ nav button.focused {
     padding: 10px 0;
 }
 
+.welcome-message p {
+    margin-bottom: 10px;
+}
+
 .back-button {
     background-color: var(--gb-dark-green);
     color: var(--gb-light-green);
@@ -490,7 +494,11 @@ nav button.focused {
         text-align: center;
         padding: 1px 0;
     }
-    
+
+    .welcome-message p {
+        margin-bottom: 1px;
+    }
+
     .dpad-up, .dpad-right, .dpad-down, .dpad-left, .dpad-center { 
         width: 45px;
         height: 45px;
